@@ -6,3 +6,8 @@ php:
   - hhvm-3.12
   - hhvm-nightly
 script: bundle exec rspec spec
+notifications:
+  emails:
+    - matsuiken12345@mineo.jp
+  on_success: always # default: change
+  on_failure: always
